@@ -1,3 +1,3 @@
 ======Description Here======
 
-We are using handlebar as templating engine.
+We are using handlebars as templating engine.
