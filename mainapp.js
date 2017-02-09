@@ -23,7 +23,7 @@ var credentials = require('./credentials.js');
 app.use(require('cookie-parser')(credentials.freshCookies));
 
 app.get('/nopage', function(req,res){
-	console.log("Tried /npage, doesnot exist");
+	console.log("Tried /nopage, doesnot exist");
 	throw new Error("/noPage doesnt exit");
 });
 app.use(function(err,req,res,next){
@@ -100,7 +100,7 @@ app.use(function(req,res,next){
 });
 
 app.get('/viewcount',function(req,res){
-	res.send('You viewed this page '+ req.session.views['/viewcount']+ 'times');
+	res.send('You viewed this page '+ req.session.views['/viewcount']+ ' times');
 });
 app.post('/process', function(req,res){
 	console.log("Form: "+ req.query.form);
