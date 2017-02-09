@@ -1,3 +1,4 @@
-======Description Here======
 
-We are using handlebars as templating engine.
+Course Follow up express app from Derek Jenes Tutorial
+Using handlebars templating engine.
+ 
